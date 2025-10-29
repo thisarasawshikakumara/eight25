@@ -6,7 +6,6 @@ describe('Eight25 Media Website Tests', () => {
   // 1️⃣ Homepage Test
   it('Visits the homepage and checks the title', () => {
     cy.visit('https://www.eight25media.com/');
-    cy.xpath('//span[@class="bs-pro-button bs-pro-button---default bs-pro-button--secondary-arrow-two"]').click();
     cy.title().should('include', 'EIGHT25'); // unable to assert as the text because it is in image format
   });
 
